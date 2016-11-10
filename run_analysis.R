@@ -139,8 +139,9 @@ save(featureMeanStd, file = "featureMeanStd.Rdata")
 cateVec = paste(bigTable[,1],bigTable[,2])
 tidyBy <- by(featureMeanStd,cateVec,FUN=colMeans)
 tidy_average <- do.call(rbind, tidyBy)
-
-write.table(tidy_average, file="tidy_average.txt", sep="\t", row.names =TRUE)
+subject_activity <-rownames(tidy_average)
+tidy_average <-cbind(subject_activity,tidy_average)
+write.table(tidy_average, file="tidy_average.txt", sep="\t", row.names =FALSE)
 
 ##
 
