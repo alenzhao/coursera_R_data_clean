@@ -1,20 +1,42 @@
 #  **Peer-graded Assignment: Getting and Cleaning Data Course Project**
 
-## **Data source**(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+## [**Data source**](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## **Requests**
 
-    * The submitted data set is tidy.
-    * The Github repo contains the required scripts.
-    * GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables 
-    * The README that explains the analysis files is clear and understandable.
-    * The work submitted for this project is the work of the student who submitted it.
+	    * The submitted data set is tidy.
+	    * The Github repo contains the required scripts.
+	    * GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables 
+	    * The README that explains the analysis files is clear and understandable.
+	    * The work submitted for this project is the work of the student who submitted it.
 
-    1. Merges the training and the test sets to create one data set.
-    2. Extracts only the measurements on the mean and standard deviation for each measurement.
-    3. Uses descriptive activity names to name the activities in the data set
-    4. Appropriately labels the data set with descriptive variable names.
-    5. With data set in step 4, creates a secondindependent tidy data set with the average of each variable for each activity and each subject.
+	    1. Merges the training and the test sets to create one data set.
+	    2. Extracts only the measurements on the mean and standard deviation for each measurement.
+	    3. Uses descriptive activity names to name the activities in the data set
+	    4. Appropriately labels the data set with descriptive variable names.
+	    5. With data set in step 4, creates a secondindependent tidy data set with the average of each variable for each activity and each subject.
+
+## ** Getting data and Cleaning step
+	   
+	   _Download the data
+
+       		url.location<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+    
+    		download.file(url.location, destfile="CSCdata.zip", method ="wget")
+    
+    		unzip(zipfile="CSCdata.zip", exdir ="CSCfolder")
+
+	   
+	   _Get the subjects: see, run_analysis.R
+
+	   _Get the variables: see, run_analysis.R
+
+	   _Combining the data: see, run_analysis.R
+
+	   _Summarizing the data: see, run_analysis.R
+
+	   _Saving the tidy data set: see, run_analysis.R
+
 
 ## **Files**
 
